@@ -58,9 +58,6 @@ header {
     width: 100%;
     height: 89px;
     margin: 0px;
-    /*  max-width: 1020px;*/
-    /*  font-family: "Lato";
-    font-weight: 700;*/
     background-color: rgb(45, 48, 58);
     border-bottom: 6px solid rgb(50, 55, 70);
     overflow: hidden;
@@ -81,6 +78,7 @@ header {
 header ul {
     display: flex;
     margin-right: 24px;
+    margin-top:40px;
     position: relative;
     bottom: -3px;
     font-weight: 700;
@@ -112,9 +110,8 @@ header ul li a:hover {
     padding: 29.5px 40px 29.5px 40px;
     font-weight: 400;
     font-size: 12px;
-    /* font-family: "Lato";
-    font-weight: 700;*/
     color: #fff;
+    line-height: 6px; 
     letter-spacing: -0.2px;
     cursor: pointer;
 }
@@ -139,16 +136,122 @@ nav ul span {
     height: 594px;
     border-bottom: 6px solid #ff6666;
     background-color: #f06c64;
-
+    overflow: hidden;
+}
+.sliderflex{
+    width:inherit;
+    height: inherit;
+    position: relative;
+}
+#slider .Phones {
+    display: flex;
+    height: inherit;
+    width:100%;
+}
+#slider .vert {
+    margin: -255px 0px 0px 112px;
+    width:240px;
+    height:483px;
+}
+#slider .hor {
+    width:484px;
+    height:240px; 
+    margin: -134px 0px 0px 72.5px;
+    padding: 0px 0px 0px 0px;
 }
 
+#slider .toright {
+    margin: -620.6px 0px 0px 964px;
+    width:16px;
+    height:27px;
+}
+#slider .toleft {
+    margin: 281px 0px 0px 41.5px;
+    width:16px;
+    height:27px;
+}
+
+
+
+
+
 /*     /////////////////// SERVICES ////////////////////    */
-.services {
+#services {
     height: 494px;
     max-width: 1020px;
     margin: 0px auto;
+    padding: 35px 39px 0px 39px;
     border-bottom: 6px solid #ffffff;
     overflow: hidden;
     background-color: #f2f2f2;
 }
+
+#services h2{
+
+  font-family: 'Lato';
+  font-size: 30px;
+  font-weight: 700;
+  color: #666d89;
+  letter-spacing: -0.9px;
+  line-height: 40px;
+}
+
+.servicestext {
+  margin-top:-12px;
+  font-size: 17px;
+  font-weight: 300;
+  color: #767e9e;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 0.1px;
+  
+    
+}
+
+.servicesflex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flexitem {
+  margin-bottom: 30px;
+  width: 20%;
+  max-height: 92px;
+  padding-left: 79px;
+  overflow: hidden;
+  position: relative;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 29px 0px 0px 0px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+
+.flexitemtitle {
+  margin: 23px 0px 0px 0px;
+  color: #666d89;
+  font-family: "Lato";
+  font-size: 19px;
+  font-weight: 700;
+    letter-spacing: -0.3px;
+
+}
+
+.flexitemtext {
+  color: #767e9e;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: justify;
+}
+
+
+
+
 
