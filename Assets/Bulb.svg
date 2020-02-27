@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61" width="61" height="61">
 	<style>
 		tspan { white-space:pre }
+        .shp1:hover{ fill: #000000}
 		.shp0 { fill: #666d89 } 
 		.shp1 { fill: none;stroke: #666d89;stroke-width: 2 } 
 	</style>
