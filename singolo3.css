@@ -1,0 +1,45 @@
+body,
+html,
+section,
+h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#form {
+    height: 568px;
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+    padding: 40px;
+}
+
+#form h2 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    margin-top: 28px;
+    letter-spacing: -0.2px;
+}
+
+#form p {
+    font-size: 18px;
+line-height: 30px;
+color: #f0d8d9;
+font-family: "Lato";
+font-weight: 300;
+}
+
+#footer {
+    padding: 0px 40px;
+    height: 76px;
+    color:#666d89;
+    background-color:#2d303a;
+}
