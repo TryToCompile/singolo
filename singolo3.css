@@ -1,9 +1,13 @@
 body,
 html,
 section,
-h2 {
+h2,
+h3,
+a,
+p {
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
 }
 
 .container {
@@ -31,15 +35,149 @@ h2 {
 
 #form p {
     font-size: 18px;
-line-height: 30px;
-color: #f0d8d9;
-font-family: "Lato";
-font-weight: 300;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    margin: 27px 0px 0px 0px;
+}
+
+.form-grid {
+    margin-top: 44px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+form {
+    font-family: "Lato", sans-serif;
+}
+
+form div {}
+
+form div input {
+    height: 36px;
+    width: 604px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6564f;
+    color: #f0d8d9;
+    padding-left: 15px;
+}
+
+form div textarea {
+    width: 602px;
+    height: 190px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    background-color: #d6564f;
+    color: #f0d8d9;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+form textarea::placeholder {
+    color: #f48c8f;
+    padding-top: 2 px;
+    padding-left: 0px;
+    font-size: 11px;
+    letter-spacing: -0.2px;
+    word-spacing: -3px;
+}
+
+form input::placeholder {
+    color: #f48c8f;
+    padding-left: 0px;
+    padding-top: 10px;
+    font-size: 12px;
+    letter-spacing: -0.3px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    color: #f0d8d9;
+    width: 33%;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #f0d8d9;
+    color: #d6564f;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.contacts-wrap {
+    margin-left: 13px;
+}
+
+.contacts-wrap a {
+    color: #f0d8d9;
+}
+
+.contacts-wrap h3 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+}
+
+#form .contacts-wrap p {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    margin-top: 9px;
+
+}
+
+#form .contacts-wrap .info-wrap {
+    margin-top: 21px;
+}
+
+#form .contacts-wrap .info-wrap p {
+    margin-top: -0.5px;
+}
+
+#form .contacts-wrap .info-wrap p img {
+    padding-right: 10px;
+}
+
+#form .contacts-wrap .info-wrap p:nth-child(1) {
+    padding-left: 3px;
 }
 
 #footer {
     padding: 0px 40px;
     height: 76px;
-    color:#666d89;
-    background-color:#2d303a;
+    color: #666d89;
+    background-color: #2d303a;
 }
+
+#footer .social {
+    float: right;
+    margin-top: 21px;
+    display: flex;
+
+}
+
+#footer .social div {
+    margin-right: -1px;
+    margin-left: 7px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .copyright {
+    margin-top: 30px;
+    font-size: 13px;
+    letter-spacing: -0.02px
+}
+
