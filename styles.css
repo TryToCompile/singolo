@@ -173,13 +173,12 @@ nav ul span {
     height: 27px;
 }
 
-.toleft:hover,
-.toright:hover {
+.toright img:hover,
+.toleft img:hover{
+    width:20px;
     cursor: pointer;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
-    border-radius: 40%;
-    background-color:aliceblue;
 }
+
 
 
 
