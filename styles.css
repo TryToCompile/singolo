@@ -263,6 +263,7 @@ nav ul span {
     color: #767e9e;
     font-size: 12px;
     line-height: 21px;
+    text-align: justify;
 }
 
 /*////////////  Portfolio  ////////////////*/
@@ -392,6 +393,7 @@ h2 {
     font-weight: 300;
     color: #767e9e;
     word-spacing: -1px;
+    text-align: justify;
 }
 
 #about h2 {
@@ -440,7 +442,7 @@ h2 {
     margin-top: -11px;
     word-spacing: 0.71px;
     line-height: 21px;
-
+    text-align: justify;
 }
 
 #about .about-grid .social {
