@@ -42,7 +42,7 @@ body {
 
 a {
     text-decoration: none;
-    color: aqua;
+    color: #FFF;
 }
 
 h1,h2,h3 {
@@ -546,7 +546,8 @@ form textarea::placeholder {
     padding-left: 0px;
     font-size: 11px;
     letter-spacing: -0.2px;
-    word-spacing: -3px;
+    word-spacing: -1px;
+    font-family: "Lato", sans-serif;
 }
 
 form input::placeholder {
