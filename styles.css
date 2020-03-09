@@ -64,7 +64,7 @@ header {
     height: 89px;
     margin: 0px;
     background-color: rgb(45, 48, 58);
-    border-bottom: 6px solid #ea676b;
+    border-bottom: 6px solid #323746;
     overflow: hidden;
 }
 
@@ -133,7 +133,7 @@ nav ul span {
     margin: 0px auto;
     padding: 0px;
     height: 594px;
-    border-bottom: 6px solid #ff6666;
+    border-bottom: 6px solid #ea676b;
     background-color: #f06c64;
     overflow: hidden;
 }
