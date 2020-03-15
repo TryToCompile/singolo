@@ -64,7 +64,7 @@ header {
     height: 89px;
     margin: 0px;
     background-color: rgb(45, 48, 58);
-    border-bottom: 6px solid #323746;
+    border-bottom: 6px solid rgb(50, 55, 70);
     overflow: hidden;
 }
 
@@ -107,9 +107,28 @@ header ul li:first-child {
     margin-right: 13px;
 }
 
-header ul li a:hover {
+/*header ul li a:hover {
     color: #f06c64;
     transition-duration: 1s;
+}*/
+
+header ul li a {
+    overflow:hidden;
+    background: linear-gradient(to right, #f06c64, #f06c64 50%,white 50%);
+    background-clip: text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-size:200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+header ul li a:hover {
+    background-position: 0 100%;
+}
+
+.active {
+    background-position: 0 100%; 
 }
 
 .logo {
@@ -133,7 +152,7 @@ nav ul span {
     margin: 0px auto;
     padding: 0px;
     height: 594px;
-    border-bottom: 6px solid #ea676b;
+    border-bottom: 6px solid #ff6666;
     background-color: #f06c64;
     overflow: hidden;
 }
@@ -173,12 +192,20 @@ nav ul span {
     height: 27px;
 }
 
+/*.toleft:hover,
+.toright:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    border-radius: 40%;
+    background-color:aliceblue;
+    
+}*/
+
 .toright img:hover,
 .toleft img:hover{
     width:20px;
     cursor: pointer;
 }
-
 
 
 
@@ -263,7 +290,6 @@ nav ul span {
     color: #767e9e;
     font-size: 12px;
     line-height: 21px;
-    text-align: justify;
 }
 
 /*////////////  Portfolio  ////////////////*/
@@ -363,6 +389,10 @@ h2 {
     overflow:hidden;
 }
 
+.photo-grid img:hover{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
 .photo-grid div:nth-child(13),
 .photo-grid div:nth-child(14),
 .photo-grid div:nth-child(15),
@@ -393,7 +423,6 @@ h2 {
     font-weight: 300;
     color: #767e9e;
     word-spacing: -1px;
-    text-align: justify;
 }
 
 #about h2 {
@@ -417,10 +446,12 @@ h2 {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
 
-.about-grid h3:hover {
+ .about-grid h3:hover {
     transition: 0.3s;
     color:green;
-    
+     overflow:hidden;
+     white-space: nowrap;
+    text-align: justify;
 }
 
 
@@ -442,7 +473,7 @@ h2 {
     margin-top: -11px;
     word-spacing: 0.71px;
     line-height: 21px;
-    text-align: justify;
+
 }
 
 #about .about-grid .social {
@@ -511,7 +542,6 @@ margin-left: 1px;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     margin: 27px 0px 0px 0px;
-    text-align: justify;
 }
 
 .form-grid {
@@ -555,6 +585,7 @@ form textarea::placeholder {
     letter-spacing: -0.2px;
     word-spacing: -1px;
     font-family: "Lato", sans-serif;
+    
 }
 
 form input::placeholder {
