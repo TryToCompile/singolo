@@ -13,6 +13,13 @@ BUTTON.addEventListener('click', () => {
     document.getElementById('result').innerText = 'The letter was sent';
     document.getElementById('pop-theme').innerText = 'Subject: ' + subject;
     document.getElementById('pop-description').innerText = 'Description: ' + description;
+     if (subject == "") {
+        document.getElementById('pop-theme').innerText = 'Without subject';
+    }
+    
+    if (description == "") {
+        document.getElementById('pop-description').innerText = 'Without description';
+    }
     document.getElementById('message-block').classList.remove('hidden');
     document.getElementById('message').classList.remove('hidden');
 });
