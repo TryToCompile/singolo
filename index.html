@@ -21,13 +21,13 @@
                  <li><span>
                    </span><a href="#">HOME</a></li>
                  <li class="dotted"><span>
-                   </span><a href="#">SERVICES</a></li>
+                   </span><a href="#services">SERVICES</a></li>
                  <li class="dotted"><span>
-                   </span><a href="#">PORTFOLIO</a></li>
+                   </span><a href="#portfolio">PORTFOLIO</a></li>
                  <li class="dotted"><span>
-                   </span><a href="#">ABOUT</a></li>
+                   </span><a href="#about">ABOUT</a></li>
                  <li class="dotted"><span>
-                   </span><a href="#">CONTACT</a></li>
+                   </span><a href="#form">CONTACT</a></li>
                </ul>
              </nav>
      </header>
@@ -223,12 +223,12 @@
       </div>
       <div class="form-grid">
       <div class="form-wrap">
-        <form action="">
+        <form id="forma" action="">
           <div><input type="text" name="name" placeholder="Name (Required)" required></div>
           <div><input type="email" name="email" placeholder="Email (Required)" required></div>
-          <div><input type="text" name="subject" placeholder="Subject"></div>
-          <div><textarea  name="descritrion" placeholder="Describe your project in detail..."  rows="10"></textarea></div>
-          <div><input type="submit" name="submit" value="Submit"></div>
+          <div><input id="subject" type="text" name="subject" placeholder="Subject"></div>
+          <div><textarea id="description"  name="description" placeholder="Describe your project in detail..."  rows="10"></textarea></div>
+         <!-- <div><input type="submit" name="submit" value="Submit"></div>-->
         </form>
       </div>
       <div class="contacts-wrap">
@@ -240,7 +240,16 @@
           <p><img src="assets/mail.png" alt=""><a href="mailto: info@singolo.com">info@singolo.com</a></p>
         </div>
       </div>
-      </div>    
+      </div>
+       <button id="btn">Submit</button>
+          <div id="message-block" class="hidden">
+             <div id="message">
+              <p><span id="result"></span></p>
+              <p><span id="pop-theme">Без темы</span></p>
+              <p><span id="pop-description">Без описания</span></p>
+              <button id="close-btn">OK</button>
+             </div>
+          </div>    
     </section>
      <footer id="footer">
       <div class="footer-flex">
