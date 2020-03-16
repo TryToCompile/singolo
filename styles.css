@@ -596,7 +596,7 @@ form input::placeholder {
     letter-spacing: -0.3px;
 }
 
-input[type="submit"] {
+/*input[type="submit"] {
     margin-top: 10px;
     color: #f0d8d9;
     width: 33%;
@@ -610,8 +610,91 @@ input[type="submit"]:hover {
     color: #d6564f;
     border-radius: 15px;
     transition: 1s;
+}*/
+
+#btn {
+    margin-top: 10px;
+    color: #f0d8d9;
+    width: 33%;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    background-color: #d6564f;
 }
 
+#btn:hover {
+    cursor: pointer;
+    background-color: #f0d8d9;
+    color: #d6564f;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+#close-btn {
+    margin-top: 10px;
+    color: #f0d8d9;
+    width: 75%;
+    border: none;
+    border-radius: 1%;
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.3);
+    background-color: #d6564f;
+    padding: 10px;
+}
+
+#close-btn:hover {
+    cursor: pointer;
+    background-color: #f0d8d9;
+    color: #d6564f;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+#message-block {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background: rgba(130,0,0,0.8);
+}
+
+.hidden {
+    display: none;
+}
+
+/*
+#message .hidden {
+    display: none;
+}
+*/
+
+#message {
+    position: fixed;
+    top: calc(61% - 25%);
+    left: calc(62% - 25%);
+    border: 2px solid #f06c64;
+    padding: 2%;
+    background-color: #d6564f;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 333px;
+}
+
+#message p span {
+        overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#message p {
+        overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+/*///////////////////////////////////////////////// CONTACTS /////////////////////////////////////////// */
 .contacts-wrap {
     margin-left: 13px;
 }
