@@ -43,9 +43,11 @@ BTN_HOR.addEventListener('click', () => {
 SCREEN_HOR.addEventListener('click', () => {
     if( click_button_hor % 2 == 0) {
         SCREEN_HOR.style.cssText = 'opacity:0%';
+        BTN_HOR.style.cssText = 'opacity:100%';
         click_button_hor++;
     } else {
         SCREEN_HOR.style.cssText = 'opacity:100%';
+        BTN_HOR.style.cssText = 'opacity:0%';
         click_button_hor++;
     }
 });
@@ -53,9 +55,11 @@ SCREEN_HOR.addEventListener('click', () => {
 SCREEN_VERT.addEventListener('click', () => {
     if( click_button_vert % 2 == 0) {
         SCREEN_VERT.style.cssText = 'opacity:0%';
+        BTN_VERT.style.cssText = 'opacity:100%';
         click_button_vert++;
     } else {
         SCREEN_VERT.style.cssText = 'opacity:100%';
+        BTN_VERT.style.cssText = 'opacity:0%';
         click_button_vert++;
     }
 });
