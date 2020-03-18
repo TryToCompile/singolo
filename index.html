@@ -12,7 +12,7 @@
 
 <body>
     
-   <div class="container">
+   <div class="container" id="container">
      <header class="header">
        <div class="logo">
          <h1>SINGOLO<span>*</span></h1>
@@ -40,9 +40,13 @@
            <div class="Phones">
              <div class="vert">
                <img src="assets/verticalphone.svg" alt="">
+               <div class="container-btn-vert"></div>
+               <div class="container-screen-vert"></div>
              </div>
              <div class="hor">
-                 <img src="assets/horizontalphone.svg" alt="">
+               <img src="assets/horizontalphone.svg" alt="">
+               <div class="container-btn-hor"></div>
+               <div class="container-screen-hor"></div>
              </div>
            </div>
            <div class="toright">
@@ -225,11 +229,22 @@
       <div class="form-grid">
       <div class="form-wrap">
         <form id="forma" action="">
-          <div><input type="text" name="name" placeholder="Name (Required)" required></div>
-          <div><input type="email" name="email" placeholder="Email (Required)" required></div>
+          <div><input id="req1" type="text" name="name" placeholder="Name (Required)" required></div>
+          <div><input id="req2" type="email" name="email" placeholder="Email (Required)" required></div>
           <div><input id="subject" type="text" name="subject" placeholder="Subject"></div>
           <div><textarea id="description"  name="description" placeholder="Describe your project in detail..."  rows="10"></textarea></div>
-         <!-- <div><input type="submit" name="submit" value="Submit"></div>-->
+<!--
+          <div><input type="submit" name="submit" value="Submit"></div>
+-->
+       <button id="btn">Submit</button>
+          <div id="message-block" class="hidden">
+             <div id="message">
+              <p><span id="result"></span></p>
+              <p><span id="pop-theme">without subject</span></p>
+              <p><span id="pop-description">without description</span></p>
+              <button id="close-btn">OK</button>
+             </div>
+          </div>    
         </form>
       </div>
       <div class="contacts-wrap">
@@ -242,15 +257,7 @@
         </div>
       </div>
       </div>
-       <button id="btn">Submit</button>
-          <div id="message-block" class="hidden">
-             <div id="message">
-              <p><span id="result"></span></p>
-              <p><span id="pop-theme">Без темы</span></p>
-              <p><span id="pop-description">Без описания</span></p>
-              <button id="close-btn">OK</button>
-             </div>
-          </div>    
+       
     </section>
      <footer id="footer">
       <div class="footer-flex">
