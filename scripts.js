@@ -29,6 +29,7 @@ SLIDER_LEFT_ARR.addEventListener('click',() => {
         setTimeout(PassiveToRight,10,active,passive);
         setTimeout(changeSlides,50,active,passive);
         setTimeout(activeToPassive,560,active,passive);
+ 
     }
 }); 
 
@@ -39,16 +40,14 @@ function activeToPassive (active,passive) {
 }
 
 function PassiveToRight (active,passive) {
-    passive.style.cssText = `transform:translate(1020px);
-                             opacity:0%`;
+    passive.style.cssText = 'transform:translate(1020px);';
     passive.classList.remove('passive-slide');
 }
 
 function changeSlides (active,passive) {
     active.style.cssText = `transition: transform 500ms;
                                 transform:translate(-1020px);`;
-        passive.style.cssText = `transition: transform 500ms;
-                                 opacity:0%`;
+        passive.style.cssText = `transition: transform 500ms;`;
     passive.classList.add('active-slide');
         active.classList.remove('active-slide');
 }
