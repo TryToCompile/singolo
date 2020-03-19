@@ -9,11 +9,90 @@ const BTN_HOR = document.querySelector('.container-btn-hor');
 const BTN_VERT = document.querySelector('.container-btn-vert');
 const SCREEN_HOR = document.querySelector('.container-screen-hor');
 const SCREEN_VERT = document.querySelector('.container-screen-vert');
-
+const SLIDER_RIGHT_ARR = document.querySelector('.toright');
+const SLIDER_LEFT_ARR = document.querySelector('.toleft');
+const SLIDE_1 = document.querySelector('.sliderflex'); 
+const SLIDE_2 = document.querySelector('.sliderFlex2');
 
 let click_button_vert = 1;
 let click_button_hor = 1;
-/////////////////////////////////////// SLIDER BUTTONS ////////////////////////////////
+
+/////////////////////////// SLIDER ///////////////////////
+
+////////////////////////// LEFT ARR /////////////////////////
+let isAnimation = false;
+SLIDER_LEFT_ARR.addEventListener('click',() => {
+        if (isAnimation == false) {
+        isAnimation = true;
+        let active = document.querySelector('.active-slide');
+        let passive = document.querySelector('.passive-slide');
+        setTimeout(PassiveToRight,10,active,passive);
+        setTimeout(changeSlides,50,active,passive);
+        setTimeout(activeToPassive,560,active,passive);
+    }
+}); 
+
+function activeToPassive (active,passive) {
+    active.classList.add('passive-slide');
+    passive.classList.remove('passive-slide');
+    isAnimation = false;
+}
+
+function PassiveToRight (active,passive) {
+    passive.style.cssText = `transform:translate(1020px);
+                             opacity:0%`;
+    passive.classList.remove('passive-slide');
+}
+
+function changeSlides (active,passive) {
+    active.style.cssText = `transition: transform 500ms;
+                                transform:translate(-1020px);`;
+        passive.style.cssText = `transition: transform 500ms;
+                                 opacity:0%`;
+    passive.classList.add('active-slide');
+        active.classList.remove('active-slide');
+}
+
+
+///////////////////////////////////// RIGHT ARR ///////////////////////
+
+SLIDER_RIGHT_ARR.addEventListener('click',() => {
+        if (isAnimation == false) {
+        isAnimation = true;
+        let active = document.querySelector('.active-slide');
+        let passive = document.querySelector('.passive-slide');
+        setTimeout(PassiveToLeft,10,active,passive);
+        setTimeout(changeSlides2,50,active,passive);
+        setTimeout(activeToPassive2,560,active,passive);
+    }
+}); 
+
+function activeToPassive2 (active,passive) {
+    active.classList.add('passive-slide');
+    passive.classList.remove('passive-slide');
+    isAnimation = false;
+}
+
+function PassiveToLeft (active,passive) {
+    passive.style.cssText = 'transform:translate(-1020px);';
+    passive.classList.remove('passive-slide');
+}
+
+function changeSlides2 (active,passive) {
+    active.style.cssText = `transition: transform 500ms;
+                                transform:translate(1020px);`;
+        passive.style.cssText = `transition: transform 500ms;`;
+    passive.classList.add('active-slide');
+        active.classList.remove('active-slide');
+}
+
+
+
+//////////////////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////// SLIDER PHONE BUTTONS ////////////////////////////////
 
 BTN_VERT.addEventListener('click', () => {
     if( click_button_vert%2 == 0) {
