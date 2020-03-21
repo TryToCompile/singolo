@@ -187,6 +187,7 @@ nav ul span {
     border-bottom: 6px solid #ff6666;
     background-color: #f06c64;
     overflow: hidden;
+    user-select: none;
     
 }
 
@@ -379,6 +380,7 @@ nav ul span {
     position: absolute;
     top: 0px;
     left: 0;
+    user-select: none;
 }
 
 .icon img:hover {
@@ -443,34 +445,36 @@ h2 {
     word-spacing: -0.5px;
 }
 
-.navigation div:hover {
+#navigation div:hover {
     color: #dedede;
     border: 1px solid #c5c5c5;
     cursor: pointer;
 }
 
-.navigation div {
-    font-size: 12px;
-    line-height: 20px;
-    color: #767e9e;
-    word-spacing: -1px;
-    outline: none;
-}
-
-
-.navigation {
+#navigation {
     display: flex;
-    margin: 10px 1px 0px 1px
+    margin: 10px 1px 0px 1px;
+    user-select: none;
 }
 
-.navigation div {
+#navigation div {
     height: 20px;
     margin-right: 10px;
     text-align: center;
     border: 1px solid #666d89;
     border-radius: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #767e9e;
+    word-spacing: -1px;
+    outline: none;
+    user-select: none;
 }
 
+#navigation .navigation-active {
+    color: #dedede;
+    border: 1px solid #c5c5c5;
+}
 
 .button1 {
     width: 27px;
@@ -489,7 +493,11 @@ h2 {
 
 }
 
-
+#portfolio .photo-grid .active-img {
+    border: #f06c64 5px solid; 
+    width: 208px;
+    height: 177px;
+}
 
 .photo-grid {
     margin-top: 19px;
@@ -501,8 +509,15 @@ h2 {
 }
 
 .photo-grid img:hover{
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    opacity: 75%;
+    cursor: pointer;
 }
+
+#container #portfolio .photo-grid div {
+        border: none;
+        user-select: none;
+}
+
 
 .photo-grid div:nth-child(13),
 .photo-grid div:nth-child(14),
@@ -565,6 +580,9 @@ h2 {
     text-align: justify;
 }
 
+.about-grid img {
+    user-select: none;
+}
 
 .about-grid h3 {
     margin-top: 11px;
@@ -734,6 +752,7 @@ input[type="submit"]:hover {
     border: none;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     background-color: #d6564f;
+    user-select: none;
 }
 
 #btn:hover {
@@ -812,8 +831,9 @@ input[type="submit"]:hover {
 }
 
 #message p {
-        overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: auto;
+    /*text-overflow: ellipsis;*/
+    max-height: 200px;
 }
 
 
@@ -884,6 +904,7 @@ input[type="submit"]:hover {
 #footer .social img {
     border-radius: 100%;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    user-select: none;
 }
 
 .footer-flex {
