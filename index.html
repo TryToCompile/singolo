@@ -20,15 +20,15 @@
              <nav>
                <ul id="menu">
                  <li><span>
-                   </span><a href="#">HOME</a></li>
+                   </span><a class="active" id="homeLink" href="#">HOME</a></li>
                  <li class="dotted"><span>
-                   </span><a href="#services">SERVICES</a></li>
+                   </span><a id="servicesLink" href="#services">SERVICES</a></li>
                  <li class="dotted"><span>
-                   </span><a href="#portfolio">PORTFOLIO</a></li>
+                   </span><a id="portfolioLink"  href="#portfolio">PORTFOLIO</a></li>
                  <li class="dotted"><span>
-                   </span><a href="#about">ABOUT</a></li>
+                   </span><a id="aboutLink" href="#about">ABOUT</a></li>
                  <li class="dotted"><span>
-                   </span><a href="#form">CONTACT</a></li>
+                   </span><a id="contactLink" href="#form">CONTACT</a></li>
                </ul>
              </nav>
      </header>
@@ -112,7 +112,7 @@
      <section id="portfolio">
         <h2>Portfolio</h2>
         <p>Duis mollis, est non commodo luctus, nisi erat porttittor ligula, eget lacinia odio sem nec elit.</p>
-        <div class="navigation">
+        <div class="navigation" id="navigation">
           <!--<ul>
             <li class="button1">All</li>
             <li class="button2">Web Design</li>
@@ -124,43 +124,45 @@
           <div class="button3">Graphic Design</div>
           <div class="button4">Artwork</div>
         </div>
+         <div id="parent">
           <div class="photo-grid">
             <div>
-              <img src="assets/portfolio1.svg" alt="">
+              <img class="web" src="assets/portfolio1.svg" alt="">
             </div>
             <div>
-              <img src="assets/portfolio2.svg" alt="">
+              <img class="web" src="assets/portfolio2.svg" alt="">
             </div>
             <div>
-              <img src="assets/portfolio3.svg" alt="">
+              <img class="web" src="assets/portfolio3.svg" alt="">
             </div>
             <div>
-              <img src="assets/portfolio4.svg" alt="">
+              <img class="web" src="assets/portfolio4.svg" alt="">
             </div>
             <div>
-              <img src="assets/portfolio5.svg" alt="">
+              <img class="graphic" src="assets/portfolio5.svg" alt="">
             </div>
             <div>
-              <img src="assets/portfolio6.svg" alt="">
+              <img class="graphic" src="assets/portfolio6.svg" alt="">
             </div>
             <div>
-              <img src="assets/portfolio7.svg" alt="">
+              <img class="graphic" src="assets/portfolio7.svg" alt="">
             </div>
             <div>
-              <img src="assets/portfolio8.svg" alt="">
+              <img class="graphic" src="assets/portfolio8.svg" alt="">
             </div>
             <div>
-              <img src="assets/portfolio9.svg" alt="">
+              <img class="art" src="assets/portfolio9.svg" alt="">
             </div>
             <div>
-              <img src="assets/portfolio10.svg" alt="">
+              <img class="art" src="assets/portfolio10.svg" alt="">
             </div>
             <div>
-              <img src="assets/portfolio11.svg" alt="">
+              <img class="art" src="assets/portfolio11.svg" alt="">
             </div>
             <div>
-              <img src="assets/portfolio12.svg" alt="">
+              <img class="art" src="assets/portfolio12.svg" alt="">
             </div>
+          </div>
           </div>
     </section>
      <section id="about">
@@ -207,7 +209,7 @@
         </div>
         <div>
           <img class="broken" src="assets/photo3.svg" alt="">
-          <h3>Scolara Visari</h3>
+          <h3 id="off">Scolara Visari</h3>
           <p>Nulla sed nunc et tordor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
           <div class="social">
             <a href="https://www.facebook.com/">
