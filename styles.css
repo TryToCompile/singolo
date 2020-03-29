@@ -1,14 +1,29 @@
 @media only screen and (min-width:768px) and  (max-width:1019px){
          #container {
     margin: 0px auto;
-    padding: 0px 40px;
     width: 100%;
     max-width: 768px;
 }
     
+    .container header ul {
+        display: flex;
+    margin-right: 26px;
+    margin-top: 39px;
+    position: relative;
+    bottom: -1px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: -0.2px;
+    list-style: none;
+    color: aqua;
+    }
     
     
     /*СЕРВИСЫ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    
+    .container #services h2 {
+        margin-top: 41px;
+    }
 
     #services .services-change {
         margin: 0px;
@@ -16,12 +31,12 @@
     }
     
     #services .flexitem {
-    width: 222px;
+    width: 224px;
     max-height: 133px;
     padding-left: 78px;
     overflow: hidden;
     position: relative;
-        margin-bottom:22px;
+        margin-bottom:11px;
         text-align: justify;
     }
     
@@ -32,12 +47,14 @@
     #services .servicesflex{
         display: flex;
         flex-wrap: wrap;
+        
         justify-content: space-between;
         height: 390px;
         width: 653px;
+        padding-top: 8px;
     }
     .container #services {
-        height: 674px;
+        height: 666px;
         border: none;
     }
 
@@ -50,7 +67,19 @@
     #portfolio .photo-grid {
         grid-template-columns: repeat(3,1fr);  
     }
+    
+    .container .photo-grid {
+        margin-top:29px;
+    }
     /*О НАС!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    
+    .container .about-grid h3 {
+        margin-top:5px;
+    }
+    
+    .container #about .about-grid .social {
+        margin-top:-8px;
+    }
     .container #about {
         height: 589px;
     }
@@ -66,13 +95,13 @@
     
     .container #form input {
         height:38px;
-        width:442px;
+        width:426px;
         margin-bottom: 2.615%;
     }
     
     .container #form textarea {
-        height: 159px;
-        width:442px;
+           height: 144px;
+            width: 424px;
     }
     
     .container .form-grid {
@@ -99,11 +128,11 @@
     }
     
     .container #slider .hor {
-            margin: -176px 0px 0px 4px;
+            margin: -175px 0px 0px 12px;
     }
     
     .container #slider .vert {
-            margin: -255px 0px 0px 83px;
+            margin: -268px 0px 0px 84px;
     }
     
     .slide2 img {
@@ -121,14 +150,14 @@
     
     .container #slider .toleft img {
         position: absolute;
-        top: -72px;
-        left: -29px;
+            top: -69px;
+            left: -13px;
     }
     
     .container #slider .toright img {
         position: absolute;
-        top: -72px;
-        left: -225px;
+        top: -55px;
+        left: -238px;
     }
     
     .container #slider .container-btn-vert {
@@ -602,7 +631,7 @@ h2 {
     padding: 0px;
     font-size: 18px;
     line-height: 30px;
-    word-spacing: -0.5px;
+    word-spacing: 2.5px;
 }
 
 #navigation div:hover {
