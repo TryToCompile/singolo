@@ -1,3 +1,163 @@
+@media only screen and (min-width:768px) and  (max-width:1019px){
+         #container {
+    margin: 0px auto;
+    padding: 0px 40px;
+    width: 100%;
+    max-width: 768px;
+}
+    
+    
+    
+    /*СЕРВИСЫ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+    #services .services-change {
+        margin: 0px;
+        height: 571px;
+    }
+    
+    #services .flexitem {
+    width: 222px;
+    max-height: 133px;
+    padding-left: 78px;
+    overflow: hidden;
+    position: relative;
+        margin-bottom:22px;
+        text-align: justify;
+    }
+    
+    #services .servicestext {
+        margin-bottom:0px;
+    }
+    
+    #services .servicesflex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 390px;
+        width: 653px;
+    }
+    .container #services {
+        height: 674px;
+        border: none;
+    }
+
+    /*ПОРТФОЛИО!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+   
+    .container #portfolio {
+        height: 1016px;
+    }
+    
+    #portfolio .photo-grid {
+        grid-template-columns: repeat(3,1fr);  
+    }
+    /*О НАС!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    .container #about {
+        height: 589px;
+    }
+    
+    .container .about-grid div > img {
+        width:100%;
+    }
+    
+    /*СВЯЗЬ!!!!!!!!!!!!!!!!!!!!!!!*/
+    .container #form {
+        height: 545px;
+    }
+    
+    .container #form input {
+        height:38px;
+        width:442px;
+        margin-bottom: 2.615%;
+    }
+    
+    .container #form textarea {
+        height: 159px;
+        width:442px;
+    }
+    
+    .container .form-grid {
+        margin-top: 2.762%;
+    }
+    
+    .container #btn {
+        margin-top: 3.706%;
+    }
+    
+    .container .contacts-wrap {
+        margin-left: 12.67%;
+    }
+    
+    .container #form .contacts-wrap .info-wrap {
+        margin-top: 6%;
+    }
+    
+    /*СЛАЙДЕР!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    
+    .container #slider .vert img {
+        width:180.85px;
+        height:363.74px;
+    }
+    
+    .container #slider .hor {
+            margin: -176px 0px 0px 4px;
+    }
+    
+    .container #slider .vert {
+            margin: -255px 0px 0px 83px;
+    }
+    
+    .slide2 img {
+        width:768px;
+    }
+    
+    .container #slider .hor img {
+        width:364.21px;
+        height:180.93px;
+    }
+    
+    .container #slider {
+        height: 445.76px;
+    }
+    
+    .container #slider .toleft img {
+        position: absolute;
+        top: -72px;
+        left: -29px;
+    }
+    
+    .container #slider .toright img {
+        position: absolute;
+        top: -72px;
+        left: -225px;
+    }
+    
+    .container #slider .container-btn-vert {
+            margin-top: -68px;
+            margin-left: 60px;
+            background-image: none;
+    }
+    
+    .container #slider .container-btn-hor {
+               margin-top: -126px;
+               margin-left: 0px;
+               background-image: none;
+    }
+    
+    .container #slider .container-screen-hor {
+         width: 251.73px;
+         height: 143.55px;
+         margin-top: -91px;
+         margin-left: 45px;
+    }
+ 
+    .container #slider .container-screen-vert {
+        width:141.55px;
+        height: 251.73px;
+        margin-top: -293px;
+        margin-left: 10px;
+    }
+}
+
 @font-face {
     font-family: "Lato";
     src: url(assets/fonts/Lato-Regular.ttf);
@@ -179,7 +339,7 @@ nav ul span {
 }
 
 
-/* try shit*/
+
 #slider {
     margin: 0px auto;
     padding: 0px;
@@ -921,3 +1081,4 @@ input[type="submit"]:hover {
 #footer .copyright p {
     margin:0px;
 }
+
