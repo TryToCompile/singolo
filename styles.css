@@ -266,6 +266,11 @@ body::-webkit-scrollbar-thumb {
     font-size: 22px;
     font-weight: 800;
     letter-spacing: -2px;
+        display: block;
+    }
+    
+    #container .singolo{
+        display: block;
     }
     
     .header-img-passive {
@@ -668,9 +673,14 @@ header {
     max-width: 1020px;
 }
 
+.singolo{
+    display: none;
+}
+
 .header-img{
     display: none;
 }
+
 .dotted:before {
     content: "";
     background-color: #494e62;
