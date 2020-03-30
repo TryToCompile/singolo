@@ -1,3 +1,15 @@
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: red;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
 @media only screen and (min-width:768px) and  (max-width:1019px){
          #container {
     margin: 0px auto;
@@ -186,6 +198,325 @@
         margin-left: 10px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:375px) and  (max-width:767px){
+  /*  body{
+     width:100vh;
+        margin:0 auto;
+    }*/
+        #container {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 375px;
+}
+    /*ХЕДЕР!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    .container header {
+        height:71px;
+        border:none;
+    }
+    
+    .dotted:before {
+        opacity: 0%;
+    }
+    
+    .container header ul {
+        height: 100vh;
+        margin:0;
+        padding:0;
+        list-style: none;
+        flex-direction: column;
+        align-items: left;
+        position: absolute;
+    }
+    
+    .container header .logo {
+        margin: 0px auto;
+        font-size: 10px;
+        padding-right: 29px;
+        padding-top: 26px;
+    }
+    
+    /*СЛАЙДЕР!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    .container #slider .vert img {
+        width:88.3px;
+        height:177.61px;
+    }
+    
+    .container #slider .hor {
+                margin: -243px 0px 0px 5px;
+    }
+    
+    .container #slider .vert {
+                margin: -288px 0px 0px 41px;
+    }
+    
+    .slide2 img {
+            width: 379px;
+            padding-top: 27px;
+    }
+    
+    .container #slider .hor img {
+        width:177.84px;
+        height:88.35px;
+    }
+    
+    .container #slider {
+        height: 220.59px;
+        border: none;
+    }
+    
+    .container #slider .toleft img {
+        position: absolute;
+            top: -184px;
+            left: -33px;
+    }
+    
+    .container #slider .toright img {
+        position: absolute;
+            top: -151px;
+            left: -614px;
+    }
+    
+    .container #slider .container-btn-vert {
+            margin-top: -37px;
+            margin-left: 28px;
+            background-image: none;
+            width: 20px;
+            height: 20px;
+    }
+    
+    .container #slider .container-btn-hor {
+                width: 20px;
+                height: 20px;
+                margin-top: -64px;
+                margin-left: 0px;
+                background-image: none;
+    }
+    
+    .container #slider .container-screen-hor {
+        width: 123.43px;
+    height: 70.12px;
+    margin-top: -43px;
+    margin-left: 22px;
+    }
+ 
+    .container #slider .container-screen-vert {
+        width: 70.12px;
+    height: 123.43px;
+    margin-top: -141px;
+    margin-left: 5px;
+    }
+
+    
+    /*СЕРВИСЫ!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    
+    .container .services-change {
+        margin:0;
+    }
+    
+    .container .servicestext {
+        margin-bottom: 0px;
+        text-align: justify;
+    }
+    .container #services {
+        height: 1032px;
+        border:none;
+    }
+    
+    .container .servicesflex {
+        margin: -1% 0 0 -3%;
+    }
+
+    .container .flexitem{
+        width:100%;
+        text-align:justify;
+        word-spacing: 1px;
+        margin-bottom: 0;
+    }
+    
+    .container #services h2 {
+        margin-top: 10%;
+        margin-left: -3%;
+    }
+    
+    /*ПОРТФОЛИО!!!!!!!!!!!!!!!!!!!!!!!*/
+    
+    .container #portfolio {
+        padding: 40px 30px 40px 30px;
+    }
+    
+    .container #portfolio{
+        height:759px;
+    }
+
+    .container #portfolio h2 {
+        margin-top: 4%;
+    }
+    
+    .container #navigation {
+        margin:5% 0 0 0;
+    }
+    
+    .container .photo-grid {
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 0.7rem;
+        grid-row-gap:0.7rem;
+        margin-top:24px;
+    }
+    
+    .container .photo-grid img {
+        width:151px;
+        height: 127px;
+    }
+    
+    #container #portfolio .photo-grid .active-img {
+        width:144px;
+        height:122px;
+    }
+    
+    .container .photo-grid div:nth-child(n+9){
+        display: none;
+    }
+    
+    /*O NAS!!!!!!!!!!!!!!!!!!*/
+    
+    .container #about {
+        height:1674px;
+        border:none;
+    }
+    
+    .container #about h2 {
+        margin-top:1%;
+        margin-left:-4%;
+    }
+    
+    .container #about p {
+        margin-left:-4%;
+    }
+    
+    .container .about-grid {
+        grid-template-columns: repeat(1,1fr);
+            margin-top: 23px;
+    }
+    
+    .container .about-grid div > img {
+        margin-left: -3%;
+        width:314px;
+        height:314px;
+    }
+    
+    .container #about .about-grid > div > p {
+        margin-left: -3%;
+        margin-top: -5%;
+        margin-bottom:-3%;
+    }
+    
+    .container #about .about-grid > div > h3 {
+        margin-left:-3%;   
+    }
+    
+    .container #about .about-grid .social {
+        margin-top: 7%;
+        margin-left: -3%;
+        padding-bottom: 8.9%;
+    }
+    
+    /*ОБРАТНАЯ СВЯЗЬ!!!!!!!!!!!!!!!!*/
+    .container #form {
+        height: 889px;
+        border:none;
+    }
+    
+    .container #form h2 {
+        margin-top: 5%;
+        margin-left: -3%;
+    }
+    
+    .container #form p {
+        margin: 27px 0px 0px -3%;
+    }
+    
+    .container .form-grid {
+        grid-template-rows:  1fr 1fr;
+        grid-template-columns: 1fr;
+        margin-top: 7.2%;
+    }
+    
+    .container form div input {
+            margin-bottom: 4%;
+            margin-left: -3.2%;
+            padding-left: 1%;
+            width: 312px;
+    }
+    
+    #container form div textarea {
+        margin-top: -0.1%;
+        width:302px;
+        height:150px;    
+        margin-left: -10px;
+        padding-left: 1.9%;
+        padding-top: 2%;
+    }
+    
+    .container #btn {
+        margin-top: 3%;
+        width:100%;
+        margin-left:-3%;
+        height:51px;
+    }
+    
+    .container .contacts-wrap {
+            margin-top: 10%;
+            margin-left: -3%;
+    }
+    
+    #container #form .contacts-wrap p {
+        margin-top: 1%;
+        margin-left: 0%;
+    }
+    
+    #container #form .contacts-wrap .info-wrap p{
+        margin-top:1%;
+    }
+    
+    #container #form .contacts-wrap .info-wrap {
+        margin-top:3%;
+    }
+    
+    #container .copyright {
+        display:none;
+    }
+    
+    #container #footer .social {
+        float:none;
+        margin: 0px auto;
+        margin-top:7%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @font-face {
     font-family: "Lato";
