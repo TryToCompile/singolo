@@ -35,6 +35,7 @@ const FORM_SECTION = document.getElementById('form');
 
 
 
+
 let click_button_vert = 1;
 let click_button_hor = 1;
 
@@ -293,7 +294,39 @@ const off = document.getElementById('off');
 MENU.addEventListener('click', () => {
     MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
     event.target.classList.add('active');
+    if (TOGGLE.classList.contains('header-img-active') || TOGGLE.classList.remove('header-img-passive') ){
+        TOGGLE.click();
+    }
 });
+
+const TOGGLE = document.querySelector('.header-img img');
+const MENU_OPACITY = document.querySelector('.menu-opacity');
+const TOGGLE_NAV = document.querySelector('nav ul');
+
+console.log(TOGGLE);
+TOGGLE.addEventListener('click', () => {
+    if (TOGGLE.classList.contains('header-img-active')){
+        TOGGLE.classList.add('header-img-passive');
+        TOGGLE.classList.remove('header-img-active');
+    } else {
+        TOGGLE.classList.add('header-img-active');
+         TOGGLE.classList.remove('header-img-passive');
+    }
+   MENU_OPACITY.classList.toggle('active-header');
+   TOGGLE_NAV.classList.toggle('active-nav');
+   
+    
+  /* if(MENU_OPACITY.classlist.contains('.active-header')){
+        TOGGLE.style.cssText = `transform: rotate(0.25turn);
+                                transition: 0.5s ease;`; 
+    } else {
+         TOGGLE.style.cssText = `transform: rotate(0.75turn);
+                                 transition: 0.5s ease;`;
+    }*/
+});
+
+
+
 
 window.addEventListener('scroll', () => {
     if (window.scrollY < SERVICES_SECTION.offsetTop - 95) {
