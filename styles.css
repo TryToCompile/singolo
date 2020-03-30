@@ -223,6 +223,7 @@ body::-webkit-scrollbar-thumb {
     .container header {
         height:71px;
         border:none;
+        overflow: visible;
     }
     
     .dotted:before {
@@ -230,13 +231,82 @@ body::-webkit-scrollbar-thumb {
     }
     
     .container header ul {
-        height: 100vh;
-        margin:0;
-        padding:0;
-        list-style: none;
-        flex-direction: column;
-        align-items: left;
+       height: 100vh;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+    position: absolute;
+    font-size: 23px;
+    top: 211px;
+    left: 56px;
+    }
+    
+    .container header ul li {
+        margin-top:25px;
+    }
+    
+    .container ul li: last-child {
+        margin-right: 0;
+    }
+    
+    .header-img {
+        transition: transform 0.5s ease;
+    }
+    
+    .header-img-active {
+        transform: rotate(0.25turn);
+         transition: 0.5s ease;
+    }
+    
+    .singolo span {
         position: absolute;
+     left: 14px;
+    top: -187px;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    }
+    
+    .header-img-passive {
+        transform: rotate(0.50turn);
+        transition:0.5s ease;
+    }
+    
+   /* .container .menu-opacity {
+        height: 100vh;
+        position: absolute;
+        width: 74%;
+        background: #2D303A;
+    }*/
+    
+    #container .active-header{
+        height: 100vh;
+        position: absolute;
+        width: 74%;
+        background: #2D303A;
+        transition: 1s ease;
+    }
+    
+    .container nav ul {
+        display:none;
+    }
+    
+    #container .active-nav {
+        display:block;
+    }
+    
+    
+    
+    .container ul li: first-child{
+        margin-right: 0;
+    }
+    
+    .container header .header-img {
+        position: absolute;
+    left: 21px;
+    top: 23px;
+        display: block;
     }
     
     .container header .logo {
@@ -598,6 +668,9 @@ header {
     max-width: 1020px;
 }
 
+.header-img{
+    display: none;
+}
 .dotted:before {
     content: "";
     background-color: #494e62;
