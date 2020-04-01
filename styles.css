@@ -843,8 +843,8 @@ body::-webkit-scrollbar-thumb {
     }
     
     #container #portfolio .photo-grid .active-img {
-        width:144px;
-        height:122px;
+           width: 137px;
+    height: 116px;
     }
     
     .container .photo-grid div:nth-child(n+9){
